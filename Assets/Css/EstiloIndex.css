@@ -16,9 +16,8 @@ body {
 }
 
 .header{
-   
-    background-size: 50% 100%;
-    background-position: center;
+background-size: 50% 100%;
+background-position: center;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f6f8f9+0,e5ebee+50,d7dee3+51,f5f7f9+100;White+Gloss */
 background: #f6f8f9; /* Old browsers */
 background: -moz-linear-gradient(top,  #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%); /* FF3.6-15 */
@@ -35,8 +34,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', end
 
 .box .footer {
     flex-grow: 0;
-    flex-basis: 50px;
+    flex-basis: 15px;
     background-color: #29251a;
+    width: 100%;
 }
 
 .center {
@@ -45,7 +45,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', end
     text-align: center;
   }
 
-  img{
+  #FotoPerf{
     display: block;
   margin-left: auto;
   margin-right: auto;
@@ -65,3 +65,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', end
   #TagSauda{
     text-align: center;
   }
+
+  #LogoLink{
+    width: 6%;
+   
+  }
+
+  #CorpCard{
+    box-shadow: 10px 5px 5px #696969;
+  }
+ 
+  #LineConte{
+    justify-content: center;
+    margin-bottom: 25px;
+    margin-right: auto;
+      margin-left: auto;
+  }
+ 
+ 
