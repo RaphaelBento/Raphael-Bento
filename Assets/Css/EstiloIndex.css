@@ -15,7 +15,7 @@ body {
     flex-basis: 10%;
 }
 
-.header{
+.header,#HeaderCard{
 background-size: 50% 100%;
 background-position: center;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f6f8f9+0,e5ebee+50,d7dee3+51,f5f7f9+100;White+Gloss */
@@ -74,7 +74,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', end
   #CorpCard{
     box-shadow: 10px 5px 5px #696969;
   }
- 
+ #CardBody{
+  box-shadow: 10px 5px 5px #696969;
+  margin-top: 10%;
+  margin-left: 50%;
+  margin-bottom: 5%;
+ }
+ @media only screen and (max-width: 750px) {
+  #CardBody{
+    
+    margin-top: 4%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 5%;
+  }
+ }
+ @media only screen and (min-width:750px) {
+  #CardBody{
+    margin-top: 10%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 5%
+  }
+ }
+
+
   #LineConte{
     justify-content: center;
     margin-bottom: 25px;
@@ -92,18 +116,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', end
 
 }
 
-.flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+#BtnVoltar{
+  position: relative;
+  left: 40%;
+  width: 20%;
 }
 
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
+#CardResum{
+  background-color: #FFDEE9;
+                  background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
 }
 
 .flip-card-front, .flip-card-back {
@@ -121,13 +142,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', end
 
 }
 
-.flip-card-back {
-    background-color: #2980b9;
-    color: white;
-    transform: rotateY(180deg);
-    height: auto;
-   
-}
+
 
 .flex-container {
   display: flex;
@@ -163,3 +178,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', end
 .EspacCard{
   margin: 25px;
 }
+ #TextCarg, #Carg,#TextDescri,#TitleDescri,#Periodo,#TextPeriodo{
+  text-align: center;
+ }
