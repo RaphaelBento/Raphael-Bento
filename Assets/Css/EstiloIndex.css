@@ -83,3 +83,83 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', end
   }
  
  
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin-left: 10px;
+
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 8px;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+
+}
+
+.flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+    height: auto;
+   
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.flex-container > flip-card {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+
+#experiencias,#contato{
+    margin: 10px;
+}
+
+.ImgCard{
+    width:300px;
+    height:300px;
+    border-radius: 8px;
+}
+
+.DescrTagP{
+    text-align: center;
+}
+
+.EspacCard{
+  margin: 25px;
+}
