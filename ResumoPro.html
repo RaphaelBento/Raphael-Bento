@@ -4,10 +4,12 @@
      <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="Assets/Css/EstiloIndex.css">
+     <link rel="icon" type="image/x-icon" href="Assets/Imagens/lampada.png">
      <title>Resumo Profissional</title>
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    </head>
+     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="Assets/Js/ScriptResumo.js"></script>
+</head>
 
     <body>
       <div class="box">
@@ -21,7 +23,7 @@
                 <a class="nav-link active" href="ResumoPro.html">Resumo Profissional</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://www.youtube.com/">Certificados e Formação</a>
+                <a class="nav-link" href="Certificado.html">Certificados e Formação</a>
               </li>
              
             </ul>
@@ -37,16 +39,6 @@
                       <div class="flip-card-front">
                         <img src="Assets/Imagens/LogoBuidIt.PNG" class="ImgCard" alt="Avatar" id="BuildIt">
                       </div>
-                      <!-- <div class="flip-card-back">
-                        <h3>Desenvolvedor full stack</h3> 
-                        <h6>Empresa</h6>
-                        <p class="DescrTagP">Build IT Solutions · Tempo integral</p> 
-                        <h6>Período</h6>
-                        <p class="DescrTagP">dez de 2021 - jun de 2022</p>
-                        <h6>Responsabilidades</h6>
-                        <p class="DescrTagP">Desenvolver soluções conforme demanda de clientes.Ultilizando C# , AspNet MVC, AspNet MVVM, consultas a bancos de dados, utilização de stored procedure, JS,HTML,CSS,Bootstrap.
-                        Treinar modelos de IA(IBM Watson).</p>
-                      </div> -->
                     </div>
                   </div>
                 </div>
@@ -58,17 +50,6 @@
                       <div class="flip-card-front">
                         <img src="Assets/Imagens/LibracomLogo.jpg" class="ImgCard" alt="Avatar" id="Libra">
                       </div>
-                      <!-- <div class="flip-card-back">
-                        <h3>Dev Junior C# AspNet</h3> 
-                        <h6>Empresa</h6>
-                        <p class="DescrTagP">Libracom - Inteligência em Processos Industriais · Tempo integral</p> 
-                        <h6>Período</h6>
-                        <p class="DescrTagP">jul de 2021 - out de 2021</p>
-                        <h6>Responsabilidades</h6>
-                        <p class="DescrTagP"> Desenvolver soluções baseadas em AspNet e C#, desenvolver biblioteca para impressão de relatórios em PDF , usar bootstrap, Jquery
-                          , consulta a banco de dados, utilização de stored procedure.
-                        </p>
-                      </div> -->
                     </div>
                   </div>
              </div>
@@ -79,17 +60,6 @@
                       <div class="flip-card-front">
                         <img src="Assets/Imagens/LogoAbsis.png" class="ImgCard" alt="Avatar" id="ABSIS">
                       </div>
-                      <!-- <div class="flip-card-back">
-                        <h3>Estagiário de desenvolvimento de software</h3> 
-                        <h6>Empresa</h6>
-                        <p class="DescrTagP">Absis - Sistemas para Gestão de Pessoas · Estágio</p> 
-                        <h6>Período</h6>
-                        <p class="DescrTagP">out de 2020 - mar de 2021</p>
-                        <h6>Responsabilidades</h6>
-                        <p class="DescrTagP"> Desenvolver e implementar aplicação da empresa com C#, VB, AspNet, AspNetCore, JavaScript,Css.
-         
-                        </p>
-                      </div> -->
                     </div>
                   </div>
              </div>  
@@ -100,22 +70,11 @@
                     <div class="flip-card-front">
                      <img src="Assets/Imagens/BbdiLogo.png" class="ImgCard" alt="Avatar" id="BBDI">
                     </div>
-                  <!-- <div class="flip-card-back">
-                         <h3>Técnico em manutenção eletrônica</h3> 
-                        <h6>Empresa</h6>
-                        <p class="DescrTagP">Grupo BBDI · Tempo integral</p> 
-                         <h6>Período</h6>
-                         <p class="DescrTagP">set de 2017 - ago de 2020</p>
-                         <h6>Responsabilidades</h6>
-                        <p class="DescrTagP"> 
-                          Atividades como técnico em eletrônica , avaliação de produtos , suporte ao SAC e ao cliente.
-                        </p>
-                  </div> -->
                 </div>
               </div>
              </div>
-
-             <div id="BoxBuildIt" style="visibility: hidden;">
+             <!-- Box da BuildIt -->
+             <div id="BoxBuildIt" style="display: none;">
               <div>
                 <div class="card" id="CardBody" >
                   <div class="card-header" id="HeaderCard">
@@ -137,82 +96,99 @@
                 </div>
              </div>
 
-             <!-- <div class="card" id="BoxBuildIt" style="visibility: hidden;" >
-              <div class="card-header">
-                Featured
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="ResumoPro.html" class="btn btn-primary">Voltar</a>
-              </div>
-            </div> -->
-            </div>
-          
+             <div id="BoxLibra" style="display: none;">
+              <div>
+                <div class="card" id="CardBody" >
+                  <div class="card-header" id="HeaderCard">
+                    <h3 class="card-title" style="text-align: center;">Libracom</h3>
+                  </div>
+                  <div class="card-body"  id="CardResum">
+                   
+                   <h4 id="Carg">Cargo:</h4>
+                   <h5 id="TextCarg">Dev Junior C# AspNet</h5>
+                   <h4 id="TitleDescri">Descrição das atividades realizadas:</h4>
+                   <h5 id="TextDescri"> Desenvolver soluções baseadas em AspNet e C#, webForms, 
+                    <br>desenvolver biblioteca para impressão de relatórios em PDF , usar bootstrap, Jquery
+                    , consulta a banco de dados, utilização de stored procedure.</h5>
+                    <h5 id="Periodo">Período</h5>
+                    <h6 id="TextPeriodo">jul de 2021 - out de 2021</h6>
+                    <a href="ResumoPro.html" class="btn btn-primary" id="BtnVoltar">Voltar</a>
+                  </div>
+                </div>
+                </div>
+             </div>
 
-         
+             <div id="BoxAbsis" style="display: none;">
+              <div>
+                <div class="card" id="CardBody" >
+                  <div class="card-header" id="HeaderCard">
+                    <h3 class="card-title" style="text-align: center;">Absis sistema para gestão de pessoas</h3>
+                  </div>
+                  <div class="card-body"  id="CardResum">
+                   
+                   <h4 id="Carg">Cargo:</h4>
+                   <h5 id="TextCarg">Estagiário de desenvolvimento de software</h5>
+                   <h4 id="TitleDescri">Descrição das atividades realizadas:</h4>
+                   <h5 id="TextDescri"> Desenvolver soluções baseadas em AspNet e C#, webForms, jquery
+                  <br>Desenvolver e implementar aplicação da empresa com C#, VB, AspNet, AspNetCore, JavaScript,Css.
+                  </h5>
+                    <h5 id="Periodo">Período</h5>
+                    <h6 id="TextPeriodo">out de 2020 - mar de 2021</h6>
+                    <a href="ResumoPro.html" class="btn btn-primary" id="BtnVoltar">Voltar</a>
+                  </div>
+                </div>
+                </div>
+             </div>
+
+             <div id="BoxBBDI" style="display: none;">
+              <div>
+                  <div class="card" id="CardBody" >
+                    <div class="card-header" id="HeaderCard">
+                      <h3 class="card-title" style="text-align: center;">BBDI</h3>
+                    </div>
+                    <div class="card-body"  id="CardResum">
+                    
+                       <h4 id="Carg">Cargo:</h4>
+                       <h5 id="TextCarg">Técnico em manutenção eletrônica</h5>
+                       <h4 id="TitleDescri">Descrição das atividades realizadas:</h4>
+                       <h5 id="TextDescri">  Atividades como técnico em eletrônica , avaliação de produtos , suporte ao SAC e ao cliente.</h5>
+                        <h5 id="Periodo">Período</h5>
+                        <h6 id="TextPeriodo">set de 2017 - ago de 2020</h6>
+                        <a href="ResumoPro.html" class="btn btn-primary" id="BtnVoltar">Voltar</a>
+                     </div>
+                  </div>
+                </div>
+             </div>
+
+
+            </div>
+        
         </div>
 
         <div class="footer">
-            <div style="display: inline-block;vertical-align: top;margin-left: 25%;">
-             <img src="Assets/Imagens/whatsapp.png" alt="LogoWhatsAPP" >
-            </div> 
-            <div style="display:inline-block;">
-             <p style="color: white;">(51)995352884</p>
+          <div class="flex-container">
+            <div class="NotasRodape">
+              <p style="color: white;display:inline-block;">Formas de contato :</p>
             </div>
-            <div style="display:inline-block;width:33% ;margin-left: 25%" >
+
+            <div  class="NotasRodape">
+                 <img src="Assets/Imagens/whatsapp.png" alt="LogoWhatsAPP" style="display:inline-block;">
+                 <p style="color: white;display:inline-block;">(51)995352884</p>
+            </div> 
+          
+            <div class="NotasRodape">
               <a href="https://www.linkedin.com/in/raphael-bento-b37656181/"> <img src="Assets/Imagens/LogoLinkedin.png" alt="Logo linkedin" id="LogoLink"> </a>
             </div>
+          </div>
         </div>
-
-
       </div> 
-            <script>
-              $(".ImgCard").click(function(e) {
-                  var Id = $(this).attr("id");
-                switch(Id)
-                {
-                  case 'BuildIt':
-                
-                    EscondElementos(Id);
-                  break;
-                  
-                  case 'Libra':
-                  EscondElementos(Id);
-                  break;
-                  
-                  case 'ABSIS':
-                  EscondElementos(Id);
-                  break;
-
-                  case 'BBDI':
-                  EscondElementos(Id);
-                  break;
-
-                }
-
-              });
-              function EscondElementos(e){
-                $(".EspacCard").remove();
-                
-                switch(e)
-                {
-                  case 'BuildIt': 
-                  $("#BoxBuildIt").css("visibility","visible");
-                  console.log("Elemento recebido " + e);
-                  break;
-
-                  case 'Libra': console.log("Elemento recebido " + e);
-                  break;
-
-                  case 'ABSIS': console.log("Elemento recebido " + e);
-                  break;
-
-                  case 'BBDI': console.log("Elemento recebido " + e);
-                  break;
-                }
-               }
-           </script>
+          
+          <script>
+            $(".ImgCard").click(function(e) {
+    var Id = $(this).attr("id");
+      EscondElementos(Id);
+});
+          </script>
         <!-- scripts para usar bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

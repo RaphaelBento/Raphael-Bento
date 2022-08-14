@@ -67,9 +67,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', end
   }
 
   #LogoLink{
-    width: 6%;
+    max-width: 35px;
+    max-height: 55px;
    
   }
+  /* @media only screen and (max-width: 352px) {
+    
+    #LogoLink{
+      width: 100%;
+     
+    }
+  }
+  @media only screen and (max-width: 752px) {
+    
+    #LogoLink{
+      width: 100%;
+     
+    }
+  } */
 
   #CorpCard{
     box-shadow: 10px 5px 5px #696969;
@@ -88,7 +103,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', end
     margin-right: 3%;
     margin-bottom: 5%;
   }
+
  }
+ @media only screen and (max-width: 750px) {
+  #BtnVoltar{
+    width: 27%;
+    position: relative;
+    left: 40%;
+  }
+ }
+
  @media only screen and (min-width:750px) {
   #CardBody{
     margin-top: 10%;
@@ -96,8 +120,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', end
     margin-right: 3%;
     margin-bottom: 5%
   }
- }
 
+ }
+ @media only screen and (min-width:750px) {
+  #BtnVoltar{
+    width: 20%; 
+    position: relative;
+    left: 40%;
+  }
+ }
 
   #LineConte{
     justify-content: center;
@@ -116,11 +147,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', end
 
 }
 
-#BtnVoltar{
-  position: relative;
-  left: 40%;
-  width: 20%;
-}
 
 #CardResum{
   background-color: #FFDEE9;
@@ -181,3 +207,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', end
  #TextCarg, #Carg,#TextDescri,#TitleDescri,#Periodo,#TextPeriodo{
   text-align: center;
  }
+
+
+
+ .flex-container > .NotasRodape {
+  
+  width: 30%;
+  margin-top: 10px;
+  text-align: center;
+ 
+}
