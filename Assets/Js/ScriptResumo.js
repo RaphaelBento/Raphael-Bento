@@ -4,7 +4,7 @@
    
    function EscondElementos(e){
     $(".EspacCard").remove();
-    
+    $("#TitleCards").remove();
     switch(e)
     {
       case 'BuildIt': 

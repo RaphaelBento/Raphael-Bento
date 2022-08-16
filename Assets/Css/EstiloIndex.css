@@ -207,9 +207,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', end
  #TextCarg, #Carg,#TextDescri,#TitleDescri,#Periodo,#TextPeriodo{
   text-align: center;
  }
+ @-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; } 
+  }
+  @-moz-keyframes fadeIn {
+  0% { opacity: 0;}
+  100% { opacity: 1; }
+  }
+  @-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+  }
+  @keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+  }
 
-
-
+.EspacCard,.card {
+-webkit-animation: fadeIn 3s ease-in-out;
+-moz-animation: fadeIn 3s ease-in-out;
+-o-animation: fadeIn 3s ease-in-out;
+animation: fadeIn 3s ease-in-out;
+}
  .flex-container > .NotasRodape {
   
   width: 30%;
