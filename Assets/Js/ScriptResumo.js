@@ -26,5 +26,9 @@
       $("#BoxBBDI").css("display","block");  
       console.log("Elemento recebido " + e);
       break;
+      case 'Mynarski':
+        $("#BoxMynarski").css("display","block");  
+        console.log("Elemento recebido " + e);
+        break;
     }
    }
