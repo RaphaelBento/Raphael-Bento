@@ -1,8 +1,4 @@
-
-
- 
-   
-   function EscondElementos(e){
+  function EscondElementos(e){
     $(".EspacCard").remove();
     $("#TitleCards").remove();
     switch(e)
@@ -26,8 +22,14 @@
       $("#BoxBBDI").css("display","block");  
       console.log("Elemento recebido " + e);
       break;
+
       case 'Mynarski':
         $("#BoxMynarski").css("display","block");  
+        console.log("Elemento recebido " + e);
+        break;
+
+      case 'NUMERIA':
+        $("#BoxNUMERIA").css("display","block");
         console.log("Elemento recebido " + e);
         break;
     }
