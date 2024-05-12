@@ -88,17 +88,7 @@
           </a>
         </div>
 
-        <div class="EspacCard">
-          <a href="#">
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <img src="Assets/Imagens/BbdiLogo.png" class="ImgCard" alt="Avatar" id="BBDI">
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
+       
 
         <div class="EspacCard">
           <a href="#">
@@ -182,26 +172,6 @@
           </div>
         </div>
 
-        <div id="BoxBBDI" style="display: none;">
-          <div>
-            <div class="card" id="CardBody">
-              <div class="card-header" id="HeaderCard">
-                <h3 class="card-title" style="text-align: center;">BBDI</h3>
-              </div>
-              <div class="card-body" id="CardResum">
-
-                <h4 id="Carg">Cargo:</h4>
-                <h5 id="TextCarg">Técnico em manutenção eletrônica</h5>
-                <h4 id="TitleDescri">Descrição das atividades realizadas:</h4>
-                <h5 id="TextDescri"> Atividades como técnico em eletrônica , avaliação de produtos , suporte ao SAC e ao
-                  cliente.</h5>
-                <h5 id="Periodo">Período</h5>
-                <h6 id="TextPeriodo">set de 2017 - ago de 2020</h6>
-                <a href="ResumoPro.html" class="btn btn-primary" id="BtnVoltar">Voltar</a>
-              </div>
-            </div>
-          </div>
-        </div>
 
         <div id="BoxMynarski" style="display: none;">
           <div>
@@ -233,10 +203,12 @@
               <div class="card-body" id="CardResum">
 
                 <h4 id="Carg">Cargo:</h4>
-                <h5 id="TextCarg">Desenvolvedor pleno I</h5>
+                <h5 id="TextCarg">Desenvolvedor pleno</h5>
                 <h4 id="TitleDescri">Descrição das atividades realizadas:</h4>
-                <h5 id="TextDescri"> Desenvolvimento BackEnd com C# e
-                  .NetCore,desenvolvimento FrontEnd com Vue 3.</h5>
+                <h5 id="TextDescri"> Desenvolvimento com C#, AspNet,.Net MVC, 
+                  .NetCore, Vue 3, AngularJS, Umbraco, NaiveUI.</h5>
+                  <h5 id="TextDescri">Suporte e atualização para aplicação Java Web</h5>
+                  <h5 id="TextDescri">Criação e atualização de scripts SQL para SQLServer</h5>
                 <h5 id="Periodo">Período</h5>
                 <h6 id="TextPeriodo">jan de 2023 - até o momento</h6>
                 <a href="ResumoPro.html" class="btn btn-primary" id="BtnVoltar">Voltar</a>
@@ -245,7 +217,12 @@
           </div>
         </div>
       </div>
-
+      <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
     </div>
 
     <div class="footer">
@@ -283,7 +260,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
     crossorigin="anonymous"></script>
-
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 </body>
 
 </html>
